@@ -1,0 +1,201 @@
+/* Contact.css */
+.contact-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  z
+  
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+  }
+  
+  .contact-form-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #333;
+    background-image: repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px);
+    background-size: 4px 4px;
+    color: #eee; /* Light background for contact form */
+  }
+  
+  .contact-form-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form-section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    font-size: 1.1em;
+    color: #eee;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    background-color: #eee;
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  .form-group textarea {
+    height: 150px;
+  }
+  
+  .cta-button {
+    background-color: #eeeeee; /* Accent color for CTA button */
+    color: #eee;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background-color: #eeeeee; /* Hover effect */
+  }
+  
+  .submission-message {
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #28a745; /* Green for success message */
+  }
+  
+  
+  .footer .social-media a {
+    color: #eee;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer .social-media a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Mobile Responsiveness (Media Queries) */
+  
+  /* Tablets and below (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .hero h1 {
+      font-size: 2.5em;
+    }
+  
+    .hero p {
+      font-size: 1.3em;
+    }
+  
+    .contact-form-section {
+      padding: 60px 20px;
+    }
+  
+    .contact-form-section h2 {
+      font-size: 2.2em;
+    }
+  
+    .contact-form {
+      padding: 10px;
+    }
+  
+    .form-group input,
+    .form-group textarea {
+      font-size: 1em;
+      padding: 12px;
+    }
+    .form-group {
+        width: 90%;
+    }
+    .cta-button {
+      padding: 10px 25px;
+      font-size: 1em;
+    }
+  }
+  
+  /* Small Mobile (max-width: 768px) */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.3em;
+    }
+  
+    .hero p {
+      font-size: 1.2em;
+    }
+  
+    .cta-button {
+      padding: 10px 25px;
+      font-size: 1em;
+    }
+  
+    .contact-form {
+      max-width: 100%;
+      padding: 0 15px;
+    }
+  
+    .form-group input,
+    .form-group textarea {
+      font-size: 1em;
+      padding: 12px;
+    }
+  
+    .submission-message {
+      font-size: 1.1em;
+    }
+  }
+  
+  /* Extra Small Mobile (max-width: 480px) */
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 2em;
+    }
+  
+    .hero p {
+      font-size: 1.1em;
+    }
+  
+    .cta-button {
+      padding: 8px 20px;
+      font-size: 0.9em;
+    }
+  
+    .form-group input,
+    .form-group textarea {
+      font-size: 1em;
+      padding: 12px;
+
+    }
+  
+    .footer {
+      padding: 10px 0;
+      font-size: 0.85em;
+    }
+  }
+  

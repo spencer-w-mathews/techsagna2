@@ -1,0 +1,289 @@
+/* Home.css */
+
+.homepage {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #333;
+  }
+  
+  .hero {
+    background-color: #000; /* Dark background for hero section */
+    color: #eee;
+    padding: 150px 20px 80px;
+    text-align: center;
+  }
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .hero-img{
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #000, #f7db1f, #f28a2e, #000);
+    box-shadow: 6px 6px 12px #333;
+    background-size: 400% 400%; /* Makes the gradient larger than the container */
+    animation: gradientAnimation 10s ease infinite; /* Animate the gradient */
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #eeeeee; /* Slight hover effect */
+  }
+  
+  .services {
+    padding: 20px 20px;
+    text-align: center;
+    background-color: #333;
+    background-image: repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px);
+    background-size: 4px 4px;
+    color: #eee; /* Light background for services */
+  }
+  
+  .services h2 {
+    font-size: 2.5em;
+  }
+  
+  .service-card-homes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+    align-items: stretch;
+  }
+  
+  .service-card-home {
+    background-color: #000;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 22%;
+    text-align: center;
+    transition: transform 0.3s ease;
+    color: #eee;
+  }
+  
+  .service-card-home:hover {
+    transform: translateY(-10px); /* Slight hover effect */
+  }
+  
+  .service-card-home h3 {
+    font-size: 1.6em;
+    color: #eee;
+    margin-bottom: 15px;
+  }
+  
+  .service-card-home p {
+    color: #eee;
+    font-size: 1.1em;
+  }
+  
+  .cta {
+    background-image: repeating-linear-gradient(-45deg, rgba(255,255,255, 0.1), rgba(255,255,255, 0.1) 1px, transparent 1px, transparent 6px);
+    background-size: 4px 4px;
+    background-color: #333;
+    color: #eee;
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: -3px;
+  }
+  
+  .cta h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .cta p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .footer {
+    background-color: #000;
+    color: #eee;
+    padding: 20px 0;
+    text-align: center;
+ 
+  }
+  
+  .footer .social-media a {
+    color: #eee;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer .social-media a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Mobile Responsiveness (Media Queries) */
+  
+  /* Tablets and below (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .hero {
+      padding: 100px 20px;
+      margin-top: 40px;
+    }
+    .hero-img{
+      width: 90%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  
+    .hero h1 {
+      font-size: 2.5em;
+    }
+  
+    .hero p {
+      font-size: 1.3em;
+    }
+  
+    .services {
+      padding: 60px 20px;
+    }
+  
+    .services h2 {
+      font-size: 2.2em;
+    }
+  
+    .service-card-homes {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .service-card-home {
+      width: 80%;  /* Stacks the service cards vertically on tablets */
+      margin-bottom: 30px;
+    }
+  
+    .cta {
+      padding: 50px 20px;
+    }
+  
+    .cta h2 {
+      font-size: 2.3em;
+    }
+  
+    .cta p {
+      font-size: 1.1em;
+    }
+  
+    .footer {
+      padding: 15px 0;
+    }
+  }
+  
+  /* Small Mobile (max-width: 768px) */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.3em;
+    }
+  
+    .hero p {
+      font-size: 1.2em;
+    }
+  
+    .cta-button {
+      padding: 10px 25px;
+      font-size: 1em;
+    }
+  
+    .service-card-homes {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: -10px;
+      gap: 20px;
+    }
+  
+    .service-card-home {
+      width: 90%; /* Make each service card full-width on small screens */
+      margin-bottom: 20px;
+      padding: 20px;
+      margin-left: -2px;
+    }
+  
+    .cta {
+      padding: 40px 20px;
+      margin-top: -120px;
+    }
+  
+    .cta h2 {
+      font-size: 2.2em;
+    }
+  
+    .cta p {
+      font-size: 1.1em;
+    }
+  
+    .footer {
+      font-size: 0.9em;
+    }
+  }
+  
+  /* Extra Small Mobile (max-width: 480px) */
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 1.8em;
+    }
+  
+    .hero p {
+      font-size: 1.1em;
+    }
+  
+    .cta-button {
+      padding: 8px 20px;
+      font-size: 0.9em;
+    }
+  
+    .service-card-homes {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+  
+    .service-card-home {
+      width: 95%; /* Full-width cards on smaller screens */
+      padding: 15px;
+    }
+  
+    .footer {
+      padding: 10px 0;
+      font-size: 0.85em;
+    }
+  
+    .footer .social-media a {
+      margin: 0 5px;
+    }
+  }
+  
+  
