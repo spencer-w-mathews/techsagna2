@@ -58,13 +58,7 @@ const Services = () => {
       </section>
 
       {/* Footer */}
-      <footer className="footer">
-        <p>© 2024 TechSagna | All Rights Reserved</p>
-        <div className="social-media">
-          <a href="https://twitter.com/techsagna">Twitter</a>
-          <a href="https://linkedin.com/company/techsagna">LinkedIn</a>
-        </div>
-      </footer>
+     
     </div>
   );
 };
